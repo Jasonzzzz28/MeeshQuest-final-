@@ -2,6 +2,7 @@
 The project includes three self-designed data structures(BST and SGT and KDT) to store city information, including name, coordinates, radius and color. 
 BST is a standard (unbalanced) binary search tree. 
 SGT is a combination of extended binary tree and scapegoat tree. 
+KDT is a combination of extended binary tree, scapegoat tree and kd-tree.
 
 # Functions 
 
