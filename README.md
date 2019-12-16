@@ -178,3 +178,17 @@ There are no parameters.
   </success>
 </results>
 ```
+## PrintKdTree: 
+This prints the current contents of the SG kd-tree in a hierarchical (preorder) manner, so that the XML structure matches the tree’s structure (see the example below). There
+are no parameters.
+<printKdTree/>
+This command succeeds if the tree has at least one point, and otherwise an error “mapIsEmpty”
+is generated. The structure of the output is similar to that of the SG tree in Part 1 in the
+sense that there are two types of nodes, internal and external. Internal nodes differ from the
+SG tree in that each stores a splitting dimension, which is either 0 (for x or vertical) or 1 (for
+y or horizontal). Rather than storing a City, each internal node only stores the coordinates
+of the splitting point.
+
+## nearestNeighbor: 
+This command takes the (x, y) coordinates of a point and conducts the nearest neighbor query on the point. 
+eg: <nearestNeighbor x="200" y="600"/>
